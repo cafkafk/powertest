@@ -83,7 +83,7 @@ fn main() -> std::io::Result<()> {
         .iter()
         .map(|subset| {
             format!(
-                "bin.name = \"{}\"\nargs = \"{} {}\"",
+                "bin.name = \"{}\"\nargs = \"{} {}\"\n",
                 &config.binary.as_ref().unwrap(),
                 &config.args.as_ref().unwrap(),
                 subset.join(" ")
